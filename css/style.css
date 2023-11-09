@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+.container{
+    margin: 30px 10px 0;
+    background-image: 
+    linear-gradient(to right,#01022def 30%,#00000088),
+    url("https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg");   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:calc(100vh - 30px) ;
+    width: calc(100% - 20px);
+}
+.container:hover{
+    background-image: 
+    linear-gradient(to right,#01022def 30%,transparent),
+    url("https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg");   
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+
+}
+header ul li {
+    margin-left: 5px;
+}
+header >a{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+header ul a:hover{
+    border-bottom: 3px solid white;
+}
+.content{
+    
+    width: max(200px,25%);
+    margin: 100px 0 0 20px;
+    padding: 20px;
+}
+.content h1{
+    text-transform: uppercase;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+.content p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.content button{
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.content button:hover{
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
